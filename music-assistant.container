@@ -4,7 +4,7 @@ ContainerName=music-assistant
 
 Network=host
 
-Environment=TZ=America/Denver
+Timezone=local
 
 Volume=%h/containers/music-assistant:/data:U,Z
 

@@ -27,7 +27,9 @@ HealthTimeout=5s
 HealthOnFailure=kill
 Notify=healthy
 
-Memory=1.5G
+# Memory limit must be 4G+ to prevent random track skips
+# https://github.com/music-assistant/support/issues/5849
+Memory=4G
 PidsLimit=256
 
 [Service]

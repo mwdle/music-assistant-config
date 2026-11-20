@@ -18,10 +18,9 @@ UserNS=auto
 NoNewPrivileges=true
 DropCapability=all
 
-HealthStartupCmd=wget --no-verbose --tries=1 --spider http://localhost:8095/ || exit 1
+HealthCmd=wget --no-verbose --tries=1 --spider http://localhost:8095/ || exit 1
 HealthStartupInterval=5s
 HealthStartupTimeout=5s
-HealthCmd=wget --no-verbose --tries=1 --spider http://localhost:8095/ || exit 1
 HealthInterval=60s
 HealthTimeout=5s
 HealthOnFailure=kill
